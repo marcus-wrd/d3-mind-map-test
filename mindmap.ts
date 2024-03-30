@@ -161,7 +161,7 @@ export class MindMap {
    * click on node text
    */
   clickNode(d) {
-    alert(`node clicked ;) ==> ${d.text}`);
+    alert(`Node Clicked ;) ==> ${d.text}`);
   }
   /**
    * add new child nodes
@@ -191,7 +191,7 @@ export class MindMap {
    * edit node text
    */
   editNode(d) {
-    var nodeTitle = prompt("node text", d.text);
+    var nodeTitle = prompt("Change node text", d.text);
     if (nodeTitle != null) {
       d.text = nodeTitle;
       this.renderMap();
